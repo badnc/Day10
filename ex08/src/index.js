@@ -1,4 +1,4 @@
-function myFunction(email) {
+function getUsername(email) {
   var username = "";
   username = {
     "user1@mail.com": "user1",
@@ -12,12 +12,12 @@ function myFunction(email) {
   username = username[email];
   return username;
 }
-console.log(myFunction("user1@mail.com"));
-console.log(myFunction("user2@mail.com"));
-console.log(myFunction("user3@mail.com"));
-console.log(myFunction("user4@mail.com"));
-console.log(myFunction("user5@mail.com"));
-console.log(myFunction("user6@mail.com"));
-console.log(myFunction(""));
-myFunction("user2@mail.com");
-module.exports = myFunction;
+console.log(getUsername("user1@mail.com"));
+console.log(getUsername("user2@mail.com"));
+console.log(getUsername("user3@mail.com"));
+console.log(getUsername("user4@mail.com"));
+console.log(getUsername("user5@mail.com"));
+console.log(getUsername("user6@mail.com"));
+console.log(getUsername(""));
+getUsername("user2@mail.com");
+module.exports = getUsername;
